@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Recommended meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <!-- PyScript CSS -->
+        <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+        <link rel="stylesheet" href="./style.css">
+
+        <!-- This script tag bootstraps PyScript -->
+        <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+        <!-- loading screen JavaScript closes the loading dialog when python is ready -->
+        <script type="module">
+            const loading = document.getElementById("loading")
+            addEventListener("py:ready", () => loading.close())
+            loading.showModal()
+        </script>
+
+
+        <!-- webpage title (shows in browser tab) -->
+        <title>Pyscript Web Dice Roller</title>
+    </head>
+
+    <body>
+        <dialog id="loading"><h1>Loading python environment...</h1></dialog>
+        <!-- Start of your code -->
+        <img src="../Images and GIFS/Weclome to the Dicer Roller.png" alt="Weclome Image" width="400" height="200">
+
+        <p>
+            This is an D-Dice Roller, Allowing you to Roll from Between an D2 to an D100. <br> all that is needed is the choice of the dice to roll. 
+            You can also Choose How Many rolls of the dice you want.<br> Example: you want to roll an D15 (15 Sided dice) 6 times, it would then give you the results for
+            6 times a virtual D15 was rolled 
+        </p>
+        <form action="">
+<!--         <label for="points">Sides:</label>  -->
+            <input type="number" id="D_Sid" name="D_Sid" step="1">
+<!--         <label for="points">Rolls:</label> -->  
+            <br>
+            <input type="number" id="D_Rol" name="D_Rol" step="1">
+            <br>
+            <input type="submit" value="Take Your Gamble">
+          </form> 
+        <!-- End of your code -->
+        <script type="py" src="main.py" config="./pyscript.json"></script>
+    </body>
+</html>
