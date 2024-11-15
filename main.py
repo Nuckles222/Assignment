@@ -19,7 +19,8 @@ def select_face_option(event):
 def roll_all_dice(event):
     global dice_type  # use global var named dice_type
     ...  # replace with your own code
-
+    dice_roll = document.getElementById("D_Rol").value 
+    
 
 def clear_history(event):
     # this finds the div tag with id attribute 'roll-history' and clears whatever is inside
