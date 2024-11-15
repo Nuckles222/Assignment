@@ -38,12 +38,21 @@
         </p>
         <form action="">
 <!--         <label for="points">Sides:</label>  -->
-            <input type="number" id="D_Sid" name="D_Sid" step="1" min="1" max="100">
+            <select name="Dice Sides" id="D_sid">
+                <option value="D2">D2</option>
+                <option value="D4">D4</option>
+                <option value="D6">D6</option>
+                <option value="D8">D8</option>
+                <option value="D10">D10</option>
+                <option value="D12">D12</option>
+                <option value="D20">D20</option>
+                <option value="D100">D100</option>
+            </select>
 <!--         <label for="points">Rolls:</label> -->  
             <br>
-            <input type="number" id="D_Rol" name="D_Rol" step="1" min="1" max="100">
+            <input type="Select" id="D_Rol" name="D_Rol" step="1">
             <br>
-            <input type="submit" value="Take Your Gamble">
+            <input type="Button" value="Take Your Gamble">
           </form> 
 
 
