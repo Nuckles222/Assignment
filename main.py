@@ -37,6 +37,8 @@ def roll_all_dice(event):
         dice_type == 20 
     elif dice_type == "D100":
         dice_type == 100
+
+
 def clear_history(event):
     # this finds the div tag with id attribute 'roll-history' and clears whatever is inside
     document.querySelector("div#roll-history").innerHTML = ""
