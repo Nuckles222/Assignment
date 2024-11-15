@@ -12,6 +12,8 @@ dice_type = "Coin"
 def select_face_option(event):
     global dice_type  # use global var named dice_type
     ...  # replace with your own code
+    dice_type = document.getElementById("D_sid").value
+    print(dice_type)
 
 
 def roll_all_dice(event):
