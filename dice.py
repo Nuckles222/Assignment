@@ -1,6 +1,6 @@
 # Dice Roller Assessment Python File 
 #  Bkah bkah bkah 
-# N
+# Need to import parts/ part of it to Main.Py 
 
 import sys
 import random as rnd 
