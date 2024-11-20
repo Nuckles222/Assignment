@@ -1,7 +1,7 @@
 from pyscript import document  # webpage module links
 # your roll_dice function should be saved in a file named 'dice.py'
 # uncomment the next line when you have this prepared
-# import dice
+import dice
 
 
 # GLOBAL (script-wide) variable
@@ -37,6 +37,13 @@ def roll_all_dice(event):
         dice_type == 20 
     elif dice_type == "D100":
         dice_type == 100
+    output=""
+    
+    for roll in range(dice_roll):
+        D_res = dice.roll_dice(dice_type)
+        output = output + D_res
+
+    document.querySelector("div#roll-history").innerHTML = output
 
 
 def clear_history(event):
