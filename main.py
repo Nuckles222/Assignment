@@ -38,7 +38,7 @@ def roll_all_dice(event):
         dice_type == 20 
     elif dice_type == "D100":
         dice_type == 100
-    output=""
+    output="the dice roll is > "
     
     for roll in range(dice_roll):
         D_res = dice.roll_dice(dice_type)
