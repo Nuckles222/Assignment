@@ -29,6 +29,8 @@ def select_face_option(event):
         dice_num = 12
     elif dice_type == "D20":
         dice_num = 20 
+    elif dice_type == "D50":
+        dice_num = 50
     elif dice_type == "D100":
         dice_num = 100
     print(f"number: {dice_num}")
