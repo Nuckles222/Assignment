@@ -18,19 +18,19 @@ def select_face_option(event):
     if dice_type == "D2":
         dice_num = 2 
     elif dice_type == "D4":
-        dice_num == 4
+        dice_num = 4
     elif dice_type == "D6":
-        dice_num == 6
+        dice_num = 6
     elif dice_type == "D8":
-        dice_num == 8
+        dice_num = 8
     elif dice_type == "D10":
-        dice_num == 10
+        dice_num = 10
     elif dice_type == "D12":
-        dice_num == 12
+        dice_num = 12
     elif dice_type == "D20":
-        dice_num == 20 
+        dice_num = 20 
     elif dice_type == "D100":
-        dice_num == 100
+        dice_num = 100
     print(f"number: {dice_num}")
 
 def roll_all_dice(event):
