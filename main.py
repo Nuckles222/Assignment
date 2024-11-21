@@ -41,7 +41,7 @@ def roll_all_dice(event):
     
     for roll in range(dice_roll):
         D_res = dice.roll_dice(dice_type)
-        output = output + D_res
+        output = f"{output}, {D_res}"
 
     document.querySelector("div#roll-history").innerHTML = output
 
