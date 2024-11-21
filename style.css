@@ -8,8 +8,9 @@ img
 body
 {
     background-color: #52527a;
+    border-style: inset;
 }
-p.inset {border-style: inset;}
+
 p 
 {
     font-family:Franklin Gothic Medium ;
