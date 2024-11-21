@@ -40,10 +40,11 @@ def roll_all_dice(event):
     elif dice_type == "D100":
         dice_num == 100
     output="the dice roll is > "
-    
+    print(f"number: {dice_num}")
     for roll in range(dice_roll):
-        D_res = dice.roll_dice(dice_num)
-        output = f"{output}, {D_res}"
+        #D_res = dice.roll_dice(dice_num)
+        #output = f"{output}, {D_res}"
+        ...
 
     document.querySelector("div#roll-history").innerHTML = output
 
