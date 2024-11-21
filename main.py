@@ -8,21 +8,13 @@ import dice
 # GLOBAL (script-wide) variable
 # this stores the selected face option from the drop-down list
 dice_type = "Coin"
-
+dice_num = 0
 
 def select_face_option(event):
-    global dice_type  # use global var named dice_type
+    global dice_type, dice_num  # use global var named dice_type
     ...  # replace with your own code
     dice_type = document.getElementById("D_sid").value
     print(dice_type)
-
-
-def roll_all_dice(event):
-    global dice_type  # use global var named dice_type
-    ...  # replace with your own code
-    dice_roll = document.getElementById("D_Rol").value 
-    dice_roll=int(dice_roll)
-    dice_num = 0 
     if dice_type == "D2":
         dice_num = 2 
     elif dice_type == "D4":
@@ -39,12 +31,20 @@ def roll_all_dice(event):
         dice_num == 20 
     elif dice_type == "D100":
         dice_num == 100
-    output="the dice roll is > "
     print(f"number: {dice_num}")
+
+def roll_all_dice(event):
+    global dice_type,dice_num # use global var named dice_type
+    ...  # replace with your own code
+    dice_roll = document.getElementById("D_Rol").value 
+    dice_roll=int(dice_roll)
+    
+    output="the dice roll is > "
+    
     for roll in range(dice_roll):
-        #D_res = dice.roll_dice(dice_num)
-        #output = f"{output}, {D_res}"
-        ...
+        D_res = dice.roll_dice(dice_num)
+        output = f"{output}, {D_res}"
+    
 
     document.querySelector("div#roll-history").innerHTML = output
 
