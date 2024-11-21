@@ -4,12 +4,12 @@ img
     margin-left: auto;
     margin-right: auto;
 }
-p.inset {border-style: inset;}
+
 body
 {
     background-color: #52527a;
 }
-
+p.inset {border-style: inset;}
 p 
 {
     font-family:Franklin Gothic Medium ;
