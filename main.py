@@ -14,7 +14,7 @@ def select_face_option(event):
     global dice_type, dice_num  # use global var named dice_type
     ...  # replace with your own code
     dice_type = document.getElementById("D_sid").value
-    print(dice_type)
+    print(f"<{dice_type}>")
     if dice_type == "D2":
         dice_num = 2 
     elif dice_type == "D4":
