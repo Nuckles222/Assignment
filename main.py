@@ -9,6 +9,27 @@ import dice
 # this stores the selected face option from the drop-down list
 dice_type = "Coin"
 dice_num = 0
+dice_type = document.getElementById("D_sid").value
+print(f"<{dice_type}>")
+if dice_type == "D2":
+    dice_num = 2 
+elif dice_type == "D4":
+    dice_num = 4
+elif dice_type == "D6":
+    dice_num = 6
+elif dice_type == "D8":
+    dice_num = 8
+elif dice_type == "D10":
+    dice_num = 10
+elif dice_type == "D12":
+    dice_num = 12
+elif dice_type == "D20":
+    dice_num = 20 
+elif dice_type == "D50":
+    dice_num = 50
+elif dice_type == "D100":
+    dice_num = 100
+
 
 def select_face_option(event):
     global dice_type, dice_num  # use global var named dice_type
