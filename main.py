@@ -22,26 +22,27 @@ def roll_all_dice(event):
     ...  # replace with your own code
     dice_roll = document.getElementById("D_Rol").value 
     dice_roll=int(dice_roll)
+    dice_num = 0 
     if dice_type == "D2":
-        dice_type = 2 
+        dice_num = 2 
     elif dice_type == "D4":
-        dice_type == 4
+        dice_num == 4
     elif dice_type == "D6":
-        dice_type == 6
+        dice_num == 6
     elif dice_type == "D8":
-        dice_type == 8
+        dice_num == 8
     elif dice_type == "D10":
-        dice_type == 10
+        dice_num == 10
     elif dice_type == "D12":
-        dice_type == 12
+        dice_num == 12
     elif dice_type == "D20":
-        dice_type == 20 
+        dice_num == 20 
     elif dice_type == "D100":
-        dice_type == 100
+        dice_num == 100
     output="the dice roll is > "
     
     for roll in range(dice_roll):
-        D_res = dice.roll_dice(dice_type)
+        D_res = dice.roll_dice(dice_num)
         output = f"{output}, {D_res}"
 
     document.querySelector("div#roll-history").innerHTML = output
